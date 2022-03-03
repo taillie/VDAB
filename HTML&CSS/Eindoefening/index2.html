@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style2.css" rel="stylesheet" media="screen">
+        <title>De Plantenshop</title>
+    </head>
+    <body>
+        <header>
+            <h1>De Plantenshop</h1>
+            <p>een oefening HTML-CSS voor de basis opleiding</p>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Verzorging</a></li>
+                <li><a href="#">Galerij</a></li>
+                <li><a href="#">Over ons</a></li>
+            </ul>
+
+        </nav>
+        <section>
+            <div id="main">
+                <h2>Online shop</h2>
+                <p>maak hier uw aankopen</p>
+                <img src="img/flowers_1024_400.jpg" alt="paarse bloemen">
+            </div>
+
+        </section>
+        <form method="get" action="file:///C:/Users/taill/Documents/VDAB/4.HTML&CSS/Eindoefening-HTML-CSS/startbestanden/js_form_ontvanger.html" name="frmZoeken" id="frmZoeken">
+            
+            <div class="kop">
+                <h2>Zoeken</h2>
+                <p>Zoek een plant die past voor uw tuin</p>
+            </div>
+            <table id="tabel">
+                <tr>
+                    <td>
+                        <label for="categorie" id="categorie">Wat zoekt u?</label>
+                    </td>
+                    <td>
+                        <select id="catKeuze" style="width: 200px;">
+                            <option>--Kies een categorie--</option>
+                            <option>bloemen</option>
+                            <option>bomen</option>
+                            <option>struiken</option>
+                            <option>vaste planten</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label for="search" id="search">Zoek op naam:</label>
+                        <input type="text" style="width:200px">
+        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        <label for="bodem" id="bodem">Welke bodem?</label>
+                    </td>
+                    <td>
+                        <select id="bodemKeuze" style="width: 200px;">
+                            <option>--Kies een bodemsoort--</option>
+                            <option>bosgrond</option>
+                            <option>klei</option>
+                            <option>leem</option>
+                            <option>zandig</option>
+                        </select>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="standplaats" id="standplaats">Standplaats:</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="standplaats" id="zonnig">
+                        <label for="zonnig">zonnig</label>
+                        <input type="radio" name="standplaats" id="halfschaduw">
+                        <label for="halfschaduw">halfschaduw</label>
+                        <input type="radio" name="standplaats" id="schaduw">
+                        <label for="schaduw">schaduw</label>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="bloeitIn" id="bloeitIn">Bloeit in: </label>
+                    </td>
+                    <td>
+                        <label for="lente">lente</label>
+                        <input type="checkbox" name="lente" id="lente">
+                        <label for="zomer">zomer</label>
+                        <input type="checkbox" name="zomer" id="zomer">
+                        <label for="herfst">herfst</label>
+                        <input type="checkbox" name="herfst" id="herfst">
+                        <label for="winter">winter</label>
+                        <input type="checkbox" name="winter" id="winter">
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <button name="zoek" id="zoek">zoek</button>
+                    </td>
+                    <td></td>
+                </tr>  
+            </table>
+        </form>
+        <footer>
+            <p>&copy; Copyright vdab</p>
+        </footer>
+    </body>
+</html>
